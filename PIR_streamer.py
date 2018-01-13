@@ -8,7 +8,7 @@ import RPi.GPIO as GPIO
 PIR_PIN = 4
 
 # give your server ip address
-server_ip_address = "192.168.1.177"
+server_ip_address = "x.x.x.x"
 
 def my_callback(PIR_PIN):
         print "\n motion detected"
