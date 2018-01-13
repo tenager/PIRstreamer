@@ -18,7 +18,7 @@ def my_callback(PIR_PIN):
         streaming_application()
 
 def streaming_application():
-       # stream video data over netcat over port 8000
+       # stream 1 minutes video data over netcat on 8000
         os.system("raspivid -n -w 680 -h 420 -fps 25 -t 60000 -o - | nc "+server_ip_address+" 8000")
 
 def main():
